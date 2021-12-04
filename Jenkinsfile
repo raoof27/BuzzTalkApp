@@ -1,5 +1,5 @@
 pipeline{
-	agent 'master'
+	agent 'any'
 	tools{
 		maven 'M3'
 		jdk 'JAVA_HOME'
@@ -7,7 +7,7 @@ pipeline{
 	stages {
 		stage('Checkout'){
 			steps{
-				git branch 'master', url 'https://github.com/raoof27/BuzzTalkApp.git'
+				git branch: 'master', url: 'https://github.com/raoof27/BuzzTalkApp.git'
 			}
 		}
 		stage('Build'){
