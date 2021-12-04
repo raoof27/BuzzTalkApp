@@ -22,7 +22,7 @@ pipeline{
 		}
 		stage('Deploy'){
 			steps{
-				bat 'java -jar "C:/Program Files (x86)/Jenkins/workspace/OnlineJob1/target/newspaper.advertisement.system-0.0.1-SNAPSHOT.jar"'
+				bat 'java -jar C:/ProgramData/Jenkins/.jenkins/workspace/Buzztalk/target/Buzztalk-0.0.1-SNAPSHOT.jar'
 			}
 		}
 	}
