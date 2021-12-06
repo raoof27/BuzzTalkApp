@@ -20,10 +20,23 @@ pipeline{
 				bat 'mvn package'
 			}
 		}
-		stage('Deploy'){
-			steps{
-				bat 'java -jar C:/ProgramData/Jenkins/.jenkins/workspace/Buzztalk/target/Buzztalk-0.0.1-SNAPSHOT.jar'
-			}
-		}
+		stage('Create Image')
+{
+steps{
+bat 'docker build -t image1:v1 .'
+}
+}
+stage('Create Container')
+{
+steps{
+bat 'docker container create -p 9000:9000 --name container1 image1:v1'
+}
+}
+stage('Start Container')
+{
+steps{
+bat 'docker start container1'
+}
+}
 	}
 }
