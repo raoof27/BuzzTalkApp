@@ -1,0 +1,26 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "my first api",
+    "version" : "2.0",
+    "title" : "TestApiTitle",
+    "termsOfService" : "google.com",
+    "contact" : {
+      "name" : "mahwish raoof",
+      "url" : "https://api.example.com",
+      "email" : "mahwish.raaof@capgemini.com"
+    },
+    "license" : {
+      "name" : "sample",
+      "url" : "https://api.example.com"
+    }
+  },
+  "host" : "virtserver.swaggerhub.com",
+  "basePath" : "/mahwish.raoof/TestApi/1.0",
+  "schemes" : [ "https" ],
+  "paths" : { },
+  "externalDocs" : {
+    "description" : "sample",
+    "url" : "https://api.example.com"
+  }
+}
